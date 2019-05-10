@@ -1,0 +1,4 @@
+thrift demo
+1、下载0.12版本thrift及windows支持运行编译用的thrift.exe软件
+2、修改pom.xml文件中thrift.dir变量为thrift.exe本地目录
+3、启动server\client模块时，注意切换application.properties文件中的server.port
