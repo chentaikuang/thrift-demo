@@ -14,7 +14,7 @@ public class LogUtil {
 
     public static Logger get(Class T) {
         String clzName = T.getName();
-        if (map.get(clzName) == null) {
+        if (!map.containsKey(clzName)) {
             map.put(clzName, LoggerFactory.getLogger(clzName));
         }
         return map.get(clzName);
